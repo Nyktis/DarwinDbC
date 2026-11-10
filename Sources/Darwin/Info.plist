@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>en</string>
+    <key>CFBundleExecutable</key>
+    <string>DarwinDbC</string>
+    <key>CFBundleIdentifier</key>
+    <string>org.darwindbc.driver.DarwinDbC</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>DarwinDbC</string>
+    <key>CFBundlePackageType</key>
+    <string>KEXT</string>
+    <key>CFBundleShortVersionString</key>
+    <string>0.1.11</string>
+    <key>CFBundleVersion</key>
+    <string>0.1.11</string>
+    <key>IOKitPersonalities</key>
+    <dict>
+        <!-- A private category lets the bootstrap coexist with other IOResources clients.
+             https://developer.apple.com/library/archive/documentation/DeviceDrivers/Conceptual/IOKitFundamentals/Matching/Matching.html -->
+        <key>DarwinDbC</key>
+        <dict>
+            <key>CFBundleIdentifier</key>
+            <string>org.darwindbc.driver.DarwinDbC</string>
+            <key>IOClass</key>
+            <string>DarwinDbC</string>
+            <key>IOMatchCategory</key>
+            <string>DarwinDbC</string>
+            <key>IOProviderClass</key>
+            <string>IOResources</string>
+            <key>IOResourceMatch</key>
+            <string>IOKit</string>
+        </dict>
+    </dict>
+    <key>OSBundleLibraries</key>
+    <dict>
+        <key>as.vit9696.Lilu</key>
+        <string>1.7.2</string>
+        <key>com.apple.iokit.IOPCIFamily</key>
+        <string>2.9</string>
+        <key>com.apple.kpi.iokit</key>
+        <string>22.0.0</string>
+        <key>com.apple.kpi.libkern</key>
+        <string>22.0.0</string>
+        <key>com.apple.kpi.mach</key>
+        <string>22.0.0</string>
+    </dict>
+    <key>OSBundleRequired</key>
+    <string>Root</string>
+</dict>
+</plist>

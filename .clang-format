@@ -1,0 +1,43 @@
+BasedOnStyle: LLVM
+Language: Cpp
+Standard: c++17
+IndentWidth: 4
+ContinuationIndentWidth: 4
+ObjCBlockIndentWidth: 4
+ColumnLimit: 100
+UseTab: Never
+AccessModifierOffset: -4
+NamespaceIndentation: None
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterFunction: true
+  AfterControlStatement: Never
+  AfterClass: false
+  AfterStruct: false
+  AfterEnum: false
+  AfterNamespace: false
+  BeforeElse: false
+AllowShortBlocksOnASingleLine: Never
+AllowShortEnumsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLambdasOnASingleLine: None
+AllowShortLoopsOnASingleLine: false
+InsertBraces: true
+BinPackArguments: false
+BinPackParameters: false
+AlignAfterOpenBracket: DontAlign
+AlignOperands: DontAlign
+BreakConstructorInitializers: BeforeColon
+PackConstructorInitializers: Never
+SeparateDefinitionBlocks: Always
+SortIncludes: Never
+FixNamespaceComments: false
+PointerAlignment: Right
+ReferenceAlignment: Right
+IndentCaseLabels: false
+MaxEmptyLinesToKeep: 1
+StatementMacros:
+  - OSDeclareDefaultStructors
+  - OSDefineMetaClassAndStructors
+  - KMOD_EXPLICIT_DECL
